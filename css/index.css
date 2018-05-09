@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    line-height: 1.6;
+}
+.header-bar {
+    background-color: hsl(170, 40%, 60%);
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+    box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.64);
+}
+.fab {
+    background-color: hsl(120, 50%, 50%);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    box-shadow: 0 2px 16px hsl(0, 0%, 0%);
+}
+.fab i {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+
+  @import url("https://fonts.googleapis.com/css?family=Quicksand|EB+Garamond");
+  /************DEFAULTS***************/
+  
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  html {
+      line-height: 1.5;
+      font-family: Quicksand, Arial, Helvetica, sans-serif;
+      background-color: #246BCC;
+  }
+  
+  .firstPage {
+      display: none;
+  }
+  
+  p#name {
+      font-size: 1rem;
+      color: black;
+  }
+  
+  p#dob {
+      font-size: 0.7rem;
+  }
+  
+  h1 {
+      font-size: 1.2rem;
+      text-align: center;
+      text-shadow: 2px 2px grey;
+      color: #0C2547;
+      opacity: 0.7;
+  }
+  
+  input#nm {
+      font-size: 1rem;
+  }
+
+#addButton{
+    position:absolute;
+    right:0;
+}
+  
+  input#dob {
+      font-size: 0.8rem;
+  }
+  
+  .page {
+      display: none;
+  }
+  
+  .active {
+      display: block;
+  }
+  
+  .reviewBtn {
+      display: block;
+  }
+  
+  a.link,
+  nav a {
+      color: black !important;
+  }
+  
+  .overlay {
+      
+      padding-right: 5%;
+      text-align: center;
+      display: none;
+      background-color: darkgray;
+      position: absolute;
+  }
+
+  .overlay.active {
+      display: block;
+  }
+  
+  .form-row #idea,
+  #at,
+  #cost,
+  #url,
+  #nm,
+  #dob {
+      font-size: 1rem;
+      border-radius: 10px;
+      margin-top: 20px;
+  }
+  
+  .bar-half {
+      background-color: #73AEFF;
+  }
+  
+  #usediv {
+      background-color: #FFCF94;
+      width: auto;
+      height: auto;
+      margin-top: 25px;
+      border: 2px solid darkblue;
+      border-radius: 75px 50px;
+      box-shadow: 2px 2px 5px #FFCF94;
+  }
+  
+  .divForGift {
+      background-color: #FFCF94;
+      width: auto;
+      height: auto;
+      margin-top: 25px;
+      border: 2px solid darkblue;
+      border-radius: 75px 50px;
+      box-shadow: 2px 2px 5px #FFCF94;
+  }
+  
+  div#giftid {
+      border-radius: 75px 75px;
+      width: 350px;
+      height: 150px;
+      line-height: 1.2rem;
+      padding-left: 50px;
+  }
+  
+  .icon.delete::before {
+      font-size: 2rem;
+      float: right;
+      line-height: 0;
+      position: inherit;
+  }
+  
+  p.personTitle {
+      text-align: center;
+      line-height: normal;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 50px auto;
+      text-shadow: 2px 2px grey;
+      color: #0C2547;
+      opacity: 0.7;
+  }
+  
+  p#giftNameId {
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .list-item p {
+      font-size: 1.5rem;
+      padding: 0.5rem 3rem 0;
+      text-overflow: clip;
+      font-weight: 500;
+      line-height: 1;
+      min-height: 3.5rem;
+      text-align: center;
+  }
+  
+
+
+  #EmptyListMessage {
+      background-color: transparent;
+      color: darkorange;
+      font-size: 0.7rem;
+  }
+  
+  #giftMes, #mes {
+
+      color: green;
+      padding-top: 150px;
+  }
+  
+  #deleteGiftMes {
+      
+      color: red;
+      padding-top: 150px;
+  }
+  
+  .personTitle #dobId {
+      font-size: 0.8rem;
+  }
+  
+  .form-row #idea,
+  #at,
+  #cost,
+  #url {
+      font-size: 1rem;
+  }
+  
+  .icon.delete {
+      position: relative;
+      top: 50%;
+  }
+  
+  .giftleft {
+      float: left;
+  }
+  
+  .giftright {
+      height: 100%;
+      float: right;
+  }
+  
+  .list-dob {
+      background-color: #ded9d2 !important;
+  }
+  
+  .list-item {
+      border: none !important;
+  }
+  
+  p#nogifts {
+      background-color: transparent;
+      color: darkorange;
+      font-size: 0.7rem;
+      display: block;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 150px;
+  }
+
+
+

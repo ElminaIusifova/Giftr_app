@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval'; 
+        style-src 'self' 'unsafe-inline'; 
+        media-src *; 
+        img-src 'self' * data: content:; connect-src *;">
+-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/tinyshell.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/platform.css" />
+
+
+    <title>GiftrApp</title>
+</head>
+
+
+<body>
+
+
+
+    <!--
+//-----------------------------------------------------------------//
+//                                                                 //
+//-------------FIRST PAGE  - PEOPLE LIST PAGE----------------------//
+//                                                                 //
+//-----------------------------------------------------------------//
+-->
+
+    <div class="page active" id="peopleList" style="overflow-y:auto; overflow-x:hidden">
+        <nav class="bar-half top">
+            <a href="#addItems" class="link right icon add" id="addButton">Add</a>
+        </nav>
+
+        <section class="content" id="personId">
+
+            <header>
+                <h1>LIST OF PEOPLE</h1>
+            </header>
+
+
+
+
+
+            <!--//-------------EMPTY LIST MESSAGE FOR PEOPLE ----------------------//-->
+
+            <div class="overlay" id="EmptyListMessage">
+                <section class="messages">
+                    <h2 id="emptyPeopleList">Empty people list</h2>
+                </section>
+            </div>
+
+         <!----------------SUCCESSFULLY SAVED PERSON MESSAGE---------------->
+            <div class="overlay" id="savedPerson">
+                <section class="messages">
+                    <h1 id="mes">The person is added</h1>
+                </section>
+            </div>
+            
+            
+
+            <ul class="list-view">
+
+
+
+            </ul>
+
+        </section>
+    </div>
+
+    <!--
+//-----------------------------------------------------------------//
+//                                                                 //
+//----------------------SECOND INPUT PAGE--------------------------//
+//                                                                 //
+//-----------------------------------------------------------------//
+-->
+
+
+
+    <div class="page" id="addPerson">
+        <nav class="bar-half top">
+            <a href="#list" class="link left icon cancel" id="cancelbtn">Cancel</a>
+            <a href="#list" class="link right icon save" id="savebtn">Save</a>
+        </nav>
+
+        <section class="content">
+        <h1>INPUT FOR PEOPLE</h1>
+        
+            
+
+            <form>
+                <p class="form-row">
+                    <input type="text" id="nm" placeholder="Enter Name" required/>
+                    <input type="date" id="dob" placeholder="YYYY-MM-DD" required/>
+                    <label for="nm"></label>
+                    <label for="dob"></label>
+                </p>
+
+                
+
+                
+            </form>
+
+
+       
+        </section>
+
+
+    </div>
+
+    <!--
+//-----------------------------------------------------------------//
+//                                                                 //
+//----------THIRD PAGE  - DETAILS PAGE - List of gifts based on the person --------//
+//                                                                 //
+//-----------------------------------------------------------------//
+-->
+
+
+    <div class="page" id="DetailsPage">
+        <nav class="bar-half top">
+            <a href="#list" class="link left icon arrow_left" id="backbtn">Back</a>
+            <a href="#list" class="link right icon add" id="addgift">Add</a>
+        </nav>
+            
+            <section class="giftMessage">
+
+           <!----------------SUCCESSFULLY Deleted GIFT MESSAGE---------------->
+            <div class="overlay" id="DeleteGiftMessage">
+                <section class="messages">
+                    <h1 id="deleteGiftMes">The gift is deleted</h1>
+                </section>
+            </div>
+           
+           <!----------------SUCCESSFULLY Saved GIFT MESSAGE---------------->
+           <div class="overlay" id="GiftMessage">
+                <section class="messages">
+                    <h1 id="giftMes">The gift is saved</h1>
+                </section>
+            </div>
+            <header>
+                
+            </header>
+            
+            <!--//-------------EMPTY GIFT LIST MESSAGE  FOR PERSON----------------------//-->
+            
+            <div class="thirdOverlay" id="message">
+                
+<!--            <section class="message">-->
+            <h1 id="emptyGiftList"></h1>
+<!--            </section>-->
+            </div>
+            
+<!--
+            <div class="personTitle">
+              
+                <p></p>
+                <p1></p1>
+            </div>
+-->
+            
+            
+                    
+                
+            
+            
+            <div class = "divGiftList">
+              <h1 class="personTitle"></h1>
+                <p id='nogifts' style="display:none;">You have no added gifts yet for this person</p>
+               <ul class="list-gift">
+<!--
+               <li class="oneGift">
+                  <div class="divForGift">
+                      
+                  </div>
+                   
+               </li>
+-->
+                
+            </ul>
+             
+            </div>
+        </section>
+
+    </div>
+
+    <!--FOURTH INPUT GIFT PAGE-->
+
+    <div class="page" id="addGift">
+        <nav class="bar-half top">
+            <a href="#list" class="link left icon cancel" id="cancelgift">Cancel</a>
+            <a href="#list" class="link right icon save" id="savegift">Save</a>
+        </nav>
+
+        <section class="content">
+
+            <header>
+                <h1> ADD A GIFT</h1>
+            </header>
+           
+            <form>
+               
+                <p class="form-row">
+                    <input type="text" id="idea" placeholder="gift idea" required/>
+                    <input type="text" id="at" placeholder="location" required/>
+                    <input type="text" id="cost" placeholder="$0.00" required/>
+                    <input type="url" id="url" placeholder="https://" required pattern="https?://.+"/>
+                    <label for="nm"></label>
+                    
+                </p>
+
+                
+
+                
+            </form>
+
+
+        </section>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/tinyshell.min.js"></script>
+
+</body>
+
+</html>
